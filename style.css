@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8faf8;
+    color: #18352a;
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 6%;
+
+    background: #064d3a;
+    border-bottom: 2px solid #c8a951;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.logo-area h2 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.logo-area span {
+    color: #d6b85a;
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d6b85a;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(3, 48, 36, 0.88),
+        rgba(3, 48, 36, 0.88)),
+        url("hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 30px;
+}
+
+.small-title {
+    color: #d6b85a;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #d6b85a;
+}
+
+.hero p {
+    color: #e8eee9;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #c8a951;
+    color: #17352a;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #dfc66d;
+}
+
+
+/* Sections */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 6%;
+
+    text-align: center;
+}
+
+.section-label {
+    color: #b18d32;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin: 8px 0 20px;
+}
+
+.description {
+    max-width: 750px;
+    margin: auto;
+    color: #53635b;
+}
+
+
+/* Programs */
+
+.programs {
+    max-width: 1200px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.program-card {
+    background: white;
+
+    padding: 28px 20px;
+
+    border-radius: 8px;
+
+    border-top: 3px solid #c8a951;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.program-card h3 {
+    color: #07543e;
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    color: #64736c;
+    font-size: 14px;
+}
+
+
+/* Academic */
+
+.academic {
+    background: #eef5f0;
+    max-width: none;
+}
+
+.academic-box {
+    max-width: 700px;
+    margin: 18px auto;
+    padding: 25px;
+
+    background: white;
+
+    border-left: 4px solid #c8a951;
+
+    text-align: left;
+}
+
+.academic-box h3 {
+    color: #07543e;
+}
+
+
+/* Admission */
+
+.admission {
+    background: white;
+}
+
+
+/* Contact */
+
+.contact {
+    background: #064d3a;
+    color: white;
+}
+
+.contact h2 {
+    color: white;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background: #032f24;
+    color: #cbd8d2;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+}
